@@ -100,6 +100,7 @@ export default {
   },
   actions: {
     addErrorLog ({ commit, rootState }, info) {
+      return
       if (!window.location.href.includes('error_logger_page')) commit('setHasReadErrorLoggerStatus', false)
       const { user: { token, userId, userName } } = rootState
       let data = {

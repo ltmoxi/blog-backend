@@ -1,7 +1,7 @@
-# 答案博客后台系统前台vue
+# blog博客后台系统前台vue
 
 #### Description
-答案博客后台系统前台
+blog博客后台系统前台
 
 # 安装
 npm install

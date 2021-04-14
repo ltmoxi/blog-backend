@@ -65,7 +65,6 @@ export default {
       saveItem:false,     //保存操作框
       saveItemStatu:false,     //保存点击状态
       itemTitle:'注册',   //保存操作框title
-      // identity: '学生',
       formData:{
         identity:1
       },

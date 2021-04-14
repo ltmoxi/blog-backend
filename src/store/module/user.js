@@ -106,7 +106,7 @@ export default {
             commit('setUserId', data.result.data.id)
             commit('setName', data.result.data.name)
             commit('setPassword', data.result.data.password)
-            
+
             commit('setAccess', data.result.data.type)
             // commit('setNewsCount', data.result.count)
             commit('setHasGetInfo', true)

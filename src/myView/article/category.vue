@@ -57,13 +57,13 @@
         </Col>
       </Row>
     </Card>
-	
+
 	<Card>
 		<Table size="large"  @on-selection-change="selectOption" stripe ref="selection" :columns="tableCol" :data="tableData">
 		</Table>
 		<Page class='mt-10 text-right' :total="total" :current='currentPage' :page-size='pageSize' @on-change="changePage" @on-page-size-change="changeSize" show-sizer show-total/>
 	</Card>
-    
+
 
      <Modal
       v-model="saveItem"
@@ -150,7 +150,7 @@ export default {
         }
       ],
       tableData: []
-      
+
     }
   },
   methods: {
@@ -211,7 +211,6 @@ export default {
                 })
                 return;
               }else if(res.data.status === 0){
-				debugger
                 this.$Message.success({
                   content:'保存成功'
                 });
@@ -391,7 +390,7 @@ export default {
         this.tableData = res.data.result.data.list
       }
     })
-		
+
   },
   computed: {
     editorId () {
